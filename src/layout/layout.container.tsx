@@ -23,7 +23,7 @@ export default class Layout extends Component {
       ...global
     }
 
-    this.view = new LayoutView(this)
+    this.view = new LayoutView()
   }
 
   componentDidMount = () => {
@@ -33,7 +33,7 @@ export default class Layout extends Component {
   }
 
   render() {
-    return this.view.render()
+    return this.view.render(this)
   }
 }
 
