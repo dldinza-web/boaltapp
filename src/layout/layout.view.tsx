@@ -15,16 +15,15 @@ export default class LayoutView extends ViewBase implements ViewBaseInterface {
           style={styles.scrollView}
         >
           {this.showFotter(component)}
+
+          <View style={styles.body}>
+            <Text style={styles.title}>Layout</Text>
+          </View>
+          <View>
+            {component.props.children}
+          </View>
         </ScrollView>
       </SafeAreaView>
-      <View style={styles.body}>
-        <Text style={styles.title}>Layout</Text>
-      </View>
-      <View>
-        {component.props.children}
-          <Text>{ component.state.title + ' Hi Title' }</Text>
-          <Text>{ component.props.title + ' Hi Prop' }</Text>
-      </View>
       </>
     );
   }

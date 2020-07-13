@@ -1,6 +1,7 @@
 package com.boaltapp;
 
 import com.facebook.react.ReactActivity;
+import com.facebook.react.GoogleCastActivity;
 
 public class MainActivity extends ReactActivity {
 
