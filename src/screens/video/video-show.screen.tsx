@@ -1,16 +1,17 @@
-import React, { Component } from "react"
 import VideoShowView from "./video-show.view"
 
 import GoogleCast from 'react-native-google-cast';
 
 import VimeoService from "../../services/vimeo.service";
+import ComponentBase from "../../core/component.base";
 
-export default class VideoShowScreen extends Component {
+export default class VideoShowScreen extends ComponentBase {
   private view :VideoShowView
   private player :any
   private vimeoSrv :VimeoService
 
   state = {
+    isLoadingVideo: false,
     video: {
       source: '',
       thumbnail: '',
@@ -26,23 +27,25 @@ export default class VideoShowScreen extends Component {
   }
 
   componentDidMount() {
-    this.vimeoSrv.loadVideo('392590844')
-      .then((video :any) => {
-          this.setState({
+    this.loadingVideo('392590844')
+  }
+
+  loadingVideo(videoId :string) {
+    this.setStateValue({ isLoadingVideo: true })
+      .then(() => this.vimeoSrv.loadVideo('392590844'))
+      .then((video :any) =>
+        this.setStateValue({
             video: {
               source: video.videoUrl,
               thumbnailUrl: video.thumbnailUrl,
               isLocal: false
             }
           })
-      })
+      )
+      .then(() => this.setStateValue({ isLoadingVideo: false }))
       .catch(error => {
         console.log('!!!error loading video')
       })
-  }
-
-  videoError(event) {
-    console.log('!!!videoError', event)
   }
 
   onStartAndroidCasting = () => {

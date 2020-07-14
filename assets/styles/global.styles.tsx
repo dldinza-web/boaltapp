@@ -18,6 +18,9 @@ const commonStyles = StyleSheet.create({
   appBg: {
     backgroundColor: colors.bgColor
   },
+  ph5: {
+    paddingHorizontal: 5
+  },
   p5: {
     padding: 5
   },

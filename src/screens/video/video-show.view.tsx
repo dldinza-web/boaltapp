@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import ViewBase from "../../core/view.base";
 import { ViewBaseInterface } from "src/core/view.base.interface";
-import { View, Text, Button, Platform } from "react-native";
+import { View, Text, Button, Platform, ActivityIndicator } from "react-native";
 import Layout from "../../layout/layout.container";
 import commonStyles from "../../../assets/styles/global.styles"
 import VideoPlayer from 'react-native-video-controls';
@@ -16,7 +16,29 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
 
     return (
       <Layout title={"testing Pro"}>
-        <View style={[styles.backgroundVideo]}>
+        { this.component.state.isLoadingVideo
+          ? this.showLoading()
+          : this.showVideo()
+        }
+      </Layout>
+    )
+  }
+
+  private showLoading() {
+    return (
+      <View
+        style={[commonStyles.horizontal, styles.activityIndicator]}
+      >
+        <ActivityIndicator size="small" color="white"/>
+        <Text style={[commonStyles.textWhite, commonStyles.ph5]}>Loading...</Text>
+      </View>
+    )
+  }
+
+  private showVideo() {
+    return (
+      <>
+        <View style={[styles.videoWrapper]}>
           <VideoPlayer
             source={
               !this.component.state.video.isLocal
@@ -30,7 +52,7 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
           { Platform.OS === 'android' &&
             <View>
               <CastButton style={[{ width: 30, height: 30, borderColor: 'green' }]} />
-              <Button onPress={component.onStartAndroidCasting} title={"Casting Chromecast"}/>
+              <Button onPress={this.component.onStartAndroidCasting} title={"Casting Chromecast"}/>
             </View>
           }
         </View>
@@ -44,7 +66,7 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
           { this.showCommentCard() }
           { this.showCommentCard() }
         </View>
-      </Layout>
+      </>
     )
   }
 

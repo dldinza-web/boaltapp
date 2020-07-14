@@ -2,8 +2,16 @@ import { StyleSheet } from "react-native"
 import { colors } from "../../../assets/styles/global.styles"
 
 const styles = StyleSheet.create({
-  backgroundVideo: {
+  videoWrapper: {
     minHeight: 288,
+  },
+  activityIndicator: {
+    alignSelf: 'center',
+    marginVertical: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.3)'
   },
   cardInfo: {
     backgroundColor: colors.cardInfoBg,
