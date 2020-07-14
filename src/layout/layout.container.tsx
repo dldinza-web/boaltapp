@@ -32,6 +32,10 @@ export default class Layout extends Component {
     })
   }
 
+  onPressHome() {
+    console.log('go to home')
+  }
+
   render() {
     return this.view.render(this)
   }

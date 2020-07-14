@@ -11,7 +11,11 @@ export default class VideoShowScreen extends Component {
   private vimeoSrv :VimeoService
 
   state = {
-    video: null
+    video: {
+      source: '',
+      thumbnail: '',
+      isLocal: false
+    }
   }
 
   constructor(props :Object) {
@@ -22,24 +26,19 @@ export default class VideoShowScreen extends Component {
   }
 
   componentDidMount() {
-    console.log('!!!component video', this.player)
-
     this.vimeoSrv.loadVideo('392590844')
       .then((video :any) => {
-          console.log('!!!video from Vimeo', video)
-
           this.setState({
-            video: video.videoUrl
+            video: {
+              source: video.videoUrl,
+              thumbnailUrl: video.thumbnailUrl,
+              isLocal: false
+            }
           })
       })
       .catch(error => {
         console.log('!!!error loading video')
       })
-  }
-
-  setFullScreen(event) {
-    console.log('!!!mode fullscreen', event)
-    console.log('!!!component video', this)
   }
 
   videoError(event) {
@@ -48,18 +47,14 @@ export default class VideoShowScreen extends Component {
 
   onStartAndroidCasting = () => {
     GoogleCast.castMedia({
-      mediaUrl: this.state.video.videoUrl,
+      mediaUrl: this.state.video.source,
       imageUrl: this.state.video.thumbnailUrl,
       title: 'Meet Blue',
       subtitle: 'The intelligence that powers ORCA',
       studio: 'Dental Whale',
-      streamDuration: 186, // seconds
-      contentType: 'video/mp4', // Optional, default is "video/mp4"
-      playPosition: 1, // seconds
-      customData: {
-        // Optional, your custom object that will be passed to as customData to reciever
-        customKey: 'customValue',
-      },
+      streamDuration: 186,
+      contentType: 'video/mp4',
+      playPosition: 1
     })
   }
 

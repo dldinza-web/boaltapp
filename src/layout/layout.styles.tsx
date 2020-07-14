@@ -1,16 +1,18 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../assets/styles/global.styles";
 
 const styles = StyleSheet.create({
-  body: {
-    backgroundColor: 'white',
+  header: {
+    backgroundColor: colors.statusBarColor
   },
-  title: {
-    fontSize: 16,
-    color: 'blue',
-    fontWeight: "bold"
+  headerTitle: {
+    alignSelf: 'center'
   },
   scrollView: {
-    backgroundColor: 'white',
+    backgroundColor: colors.bgColor
+  },
+  body: {
+    minHeight: '100%'
   },
   footer: {
     fontSize: 12,
@@ -19,6 +21,9 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
+  appWrapper: {
+    maxHeight: '100%'
+  }
 })
 
 export default styles
