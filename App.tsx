@@ -9,15 +9,12 @@
  */
 
 import React, { Component } from 'react';
-import Layout from './src/layout/layout.container';
-import { Text } from 'react-native';
+import VideoShowScreen from './src/screens/video/video-show.screen';
 
 export default class App extends Component {
   render() {
     return (
-      <Layout title={"testing Pro"}>
-        <Text>hi!</Text>
-      </Layout>
+      <VideoShowScreen />
     )
   }
 }
