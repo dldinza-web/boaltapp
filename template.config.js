@@ -1,4 +1,4 @@
 module.exports = {
-  placeholderName: 'BoaltApp',
+  placeholderName: 'DentalWhale',
   templateDir: './template',
 }

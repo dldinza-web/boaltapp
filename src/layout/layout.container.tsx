@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { View, Text} from "react-native";
 import LayoutView from "./layout.view";
 
 declare interface HermesInternal {
@@ -21,26 +20,24 @@ export default class Layout extends Component {
 
     this.attrs = {
       ...this.attrs,
-      global
+      ...global
     }
 
-    this.view = new LayoutView(this.props, this.attrs)
+    this.view = new LayoutView()
   }
 
   componentDidMount = () => {
     this.setState({
-      title: 'hi2'
+      title: 'hi3'
     })
   }
 
-  render() {
-    return this.view.render(this.state)
+  onPressHome() {
+    console.log('go to home')
+  }
 
-    // return(
-    //   <View>
-    //     <Text>{this.state.title}</Text>
-    //   </View>
-    // )
+  render() {
+    return this.view.render(this)
   }
 }
 

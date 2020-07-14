@@ -16,10 +16,26 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* BoaltAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BoaltAppTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9AEAD78E671DD179CE2745BA /* libPods-BoaltApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071ED05E30329C87A07FA359 /* libPods-BoaltApp.a */; };
-		A0CA7DEFD71664333BEA9F92 /* libPods-BoaltApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA31B4C81773F7C9E404D2F /* libPods-BoaltApp-tvOS.a */; };
-		C102ABB72D41D4FDC3AF0251 /* libPods-BoaltApp-BoaltAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0467E80A50DA8C8C54A7ACC1 /* libPods-BoaltApp-BoaltAppTests.a */; };
-		FDAC1E629056C785367D2153 /* libPods-BoaltApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1575F945955FFE86AE84EDAE /* libPods-BoaltApp-tvOSTests.a */; };
+		9AEAD78E671DD179CE2745BA /* libPods-DentalWhale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071ED05E30329C87A07FA359 /* libPods-DentalWhale.a */; };
+		A0CA7DEFD71664333BEA9F92 /* libPods-DentalWhale-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA31B4C81773F7C9E404D2F /* libPods-DentalWhale-tvOS.a */; };
+		C102ABB72D41D4FDC3AF0251 /* libPods-DentalWhale-BoaltAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0467E80A50DA8C8C54A7ACC1 /* libPods-DentalWhale-BoaltAppTests.a */; };
+		FDAC1E629056C785367D2153 /* libPods-DentalWhale-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1575F945955FFE86AE84EDAE /* libPods-DentalWhale-tvOSTests.a */; };
+		79498DC136894A6AA23676E3 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 497C352BADC24A51919007EF /* AntDesign.ttf */; };
+		05B7F7E7B168414DB1A3F5C5 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA3D9C869AB49D296D8D561 /* Entypo.ttf */; };
+		2F000BE6F9DC435988FB9AE9 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B24130A7A2604F458F3554D0 /* EvilIcons.ttf */; };
+		036CF66A3F3E449694DF9218 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73DE0ACB48874A33A5FB9A7C /* Feather.ttf */; };
+		B557DBD6C5414D99BAEA1EA8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56562895918949529A78A926 /* FontAwesome.ttf */; };
+		0C2BAF03EAC946E3AC2C3946 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D71DAE71B36A43C4A24C3F6A /* FontAwesome5_Brands.ttf */; };
+		7DFBA50D4A354EEE87F5F1F2 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62CD62F1DDCD4367B275074A /* FontAwesome5_Regular.ttf */; };
+		72136B631707440999D77E32 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2FBB090279B42F08B499682 /* FontAwesome5_Solid.ttf */; };
+		76AA35DEEF1945F89B07EC6F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53D1EC6BA5F0473686B9DF76 /* Fontisto.ttf */; };
+		FB105732B87D4BF09991BCE6 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6224EC71A41B4A2690F3C9CF /* Foundation.ttf */; };
+		61C12B9FAB70481FB496BDE9 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0527211E24FD491A94908BDA /* Ionicons.ttf */; };
+		0F761AD5426043F1ADE327EC /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47A344AB47E841ABA5700F5E /* MaterialCommunityIcons.ttf */; };
+		8A6DBF6B39214CE1B4362CE3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A974D1523E334EB3BBBAA022 /* MaterialIcons.ttf */; };
+		422FE1F4F4F14DF1BBCD99DC /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6ECC024632D445AA22201B8 /* Octicons.ttf */; };
+		29FC90D83EEC4AE4A8124C94 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 914F57B7522D49FDBD6BBC28 /* SimpleLineIcons.ttf */; };
+		7852DD46AEDF4139BD2F67B9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E06F7C183C834C7EBAC0C7B3 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +44,14 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = BoaltApp;
+			remoteInfo = DentalWhale;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "BoaltApp-tvOS";
+			remoteInfo = "DentalWhale-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,29 +60,45 @@
 		00E356EE1AD99517003FC87E /* BoaltAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoaltAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BoaltAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoaltAppTests.m; sourceTree = "<group>"; };
-		0467E80A50DA8C8C54A7ACC1 /* libPods-BoaltApp-BoaltAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoaltApp-BoaltAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		071ED05E30329C87A07FA359 /* libPods-BoaltApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoaltApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* BoaltApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoaltApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BoaltApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BoaltApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BoaltApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BoaltApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BoaltApp/main.m; sourceTree = "<group>"; };
-		1575F945955FFE86AE84EDAE /* libPods-BoaltApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoaltApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C61B109CDBCB56268C0820B /* Pods-BoaltApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp.release.xcconfig"; path = "Target Support Files/Pods-BoaltApp/Pods-BoaltApp.release.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* BoaltApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BoaltApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* BoaltApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoaltApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DA31B4C81773F7C9E404D2F /* libPods-BoaltApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoaltApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43476DE43BA989F869CA6496 /* Pods-BoaltApp-BoaltAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-BoaltAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BoaltApp-BoaltAppTests/Pods-BoaltApp-BoaltAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		57C364A5CA123E7A68481EF7 /* Pods-BoaltApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BoaltApp-tvOS/Pods-BoaltApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		7F9E91B0602E0A72AEF855CA /* Pods-BoaltApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BoaltApp-tvOSTests/Pods-BoaltApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BoaltApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		95EEA1F54F7C00564651E856 /* Pods-BoaltApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BoaltApp-tvOSTests/Pods-BoaltApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		AA2A5F69F24084B13306A327 /* Pods-BoaltApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp.debug.xcconfig"; path = "Target Support Files/Pods-BoaltApp/Pods-BoaltApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B1C86AC04EF3943C8397F494 /* Pods-BoaltApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BoaltApp-tvOS/Pods-BoaltApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C09DE654546BF612DC318A53 /* Pods-BoaltApp-BoaltAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoaltApp-BoaltAppTests.release.xcconfig"; path = "Target Support Files/Pods-BoaltApp-BoaltAppTests/Pods-BoaltApp-BoaltAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0467E80A50DA8C8C54A7ACC1 /* libPods-DentalWhale-BoaltAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DentalWhale-BoaltAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071ED05E30329C87A07FA359 /* libPods-DentalWhale.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DentalWhale.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* DentalWhale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DentalWhale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DentalWhale/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DentalWhale/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DentalWhale/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DentalWhale/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DentalWhale/main.m; sourceTree = "<group>"; };
+		1575F945955FFE86AE84EDAE /* libPods-DentalWhale-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DentalWhale-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C61B109CDBCB56268C0820B /* Pods-DentalWhale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale.release.xcconfig"; path = "Target Support Files/Pods-DentalWhale/Pods-DentalWhale.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* DentalWhale-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DentalWhale-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* DentalWhale-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DentalWhale-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA31B4C81773F7C9E404D2F /* libPods-DentalWhale-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DentalWhale-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43476DE43BA989F869CA6496 /* Pods-DentalWhale-BoaltAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-BoaltAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DentalWhale-BoaltAppTests/Pods-DentalWhale-BoaltAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57C364A5CA123E7A68481EF7 /* Pods-DentalWhale-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-tvOS.release.xcconfig"; path = "Target Support Files/Pods-DentalWhale-tvOS/Pods-DentalWhale-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		7F9E91B0602E0A72AEF855CA /* Pods-DentalWhale-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DentalWhale-tvOSTests/Pods-DentalWhale-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DentalWhale/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95EEA1F54F7C00564651E856 /* Pods-DentalWhale-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DentalWhale-tvOSTests/Pods-DentalWhale-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA2A5F69F24084B13306A327 /* Pods-DentalWhale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale.debug.xcconfig"; path = "Target Support Files/Pods-DentalWhale/Pods-DentalWhale.debug.xcconfig"; sourceTree = "<group>"; };
+		B1C86AC04EF3943C8397F494 /* Pods-DentalWhale-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DentalWhale-tvOS/Pods-DentalWhale-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C09DE654546BF612DC318A53 /* Pods-DentalWhale-BoaltAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DentalWhale-BoaltAppTests.release.xcconfig"; path = "Target Support Files/Pods-DentalWhale-BoaltAppTests/Pods-DentalWhale-BoaltAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		497C352BADC24A51919007EF /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BA3D9C869AB49D296D8D561 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B24130A7A2604F458F3554D0 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73DE0ACB48874A33A5FB9A7C /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		56562895918949529A78A926 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D71DAE71B36A43C4A24C3F6A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		62CD62F1DDCD4367B275074A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2FBB090279B42F08B499682 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53D1EC6BA5F0473686B9DF76 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6224EC71A41B4A2690F3C9CF /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0527211E24FD491A94908BDA /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47A344AB47E841ABA5700F5E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A974D1523E334EB3BBBAA022 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F6ECC024632D445AA22201B8 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		914F57B7522D49FDBD6BBC28 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E06F7C183C834C7EBAC0C7B3 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C102ABB72D41D4FDC3AF0251 /* libPods-BoaltApp-BoaltAppTests.a in Frameworks */,
+				C102ABB72D41D4FDC3AF0251 /* libPods-DentalWhale-BoaltAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AEAD78E671DD179CE2745BA /* libPods-BoaltApp.a in Frameworks */,
+				9AEAD78E671DD179CE2745BA /* libPods-DentalWhale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CA7DEFD71664333BEA9F92 /* libPods-BoaltApp-tvOS.a in Frameworks */,
+				A0CA7DEFD71664333BEA9F92 /* libPods-DentalWhale-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAC1E629056C785367D2153 /* libPods-BoaltApp-tvOSTests.a in Frameworks */,
+				FDAC1E629056C785367D2153 /* libPods-DentalWhale-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +154,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* BoaltApp */ = {
+		13B07FAE1A68108700A75B9A /* DentalWhale */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +165,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = BoaltApp;
+			name = DentalWhale;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +173,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				071ED05E30329C87A07FA359 /* libPods-BoaltApp.a */,
-				0467E80A50DA8C8C54A7ACC1 /* libPods-BoaltApp-BoaltAppTests.a */,
-				3DA31B4C81773F7C9E404D2F /* libPods-BoaltApp-tvOS.a */,
-				1575F945955FFE86AE84EDAE /* libPods-BoaltApp-tvOSTests.a */,
+				071ED05E30329C87A07FA359 /* libPods-DentalWhale.a */,
+				0467E80A50DA8C8C54A7ACC1 /* libPods-DentalWhale-BoaltAppTests.a */,
+				3DA31B4C81773F7C9E404D2F /* libPods-DentalWhale-tvOS.a */,
+				1575F945955FFE86AE84EDAE /* libPods-DentalWhale-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,12 +191,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* BoaltApp */,
+				13B07FAE1A68108700A75B9A /* DentalWhale */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BoaltAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				DFC25EC443AC993D9F4A3883 /* Pods */,
+				2D3E4E8FA834479E9F3D4D9A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,10 +207,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* BoaltApp.app */,
+				13B07F961A680F5B00A75B9A /* DentalWhale.app */,
 				00E356EE1AD99517003FC87E /* BoaltAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* BoaltApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* BoaltApp-tvOSTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* DentalWhale-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* DentalWhale-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,18 +218,42 @@
 		DFC25EC443AC993D9F4A3883 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA2A5F69F24084B13306A327 /* Pods-BoaltApp.debug.xcconfig */,
-				2C61B109CDBCB56268C0820B /* Pods-BoaltApp.release.xcconfig */,
-				43476DE43BA989F869CA6496 /* Pods-BoaltApp-BoaltAppTests.debug.xcconfig */,
-				C09DE654546BF612DC318A53 /* Pods-BoaltApp-BoaltAppTests.release.xcconfig */,
-				B1C86AC04EF3943C8397F494 /* Pods-BoaltApp-tvOS.debug.xcconfig */,
-				57C364A5CA123E7A68481EF7 /* Pods-BoaltApp-tvOS.release.xcconfig */,
-				7F9E91B0602E0A72AEF855CA /* Pods-BoaltApp-tvOSTests.debug.xcconfig */,
-				95EEA1F54F7C00564651E856 /* Pods-BoaltApp-tvOSTests.release.xcconfig */,
+				AA2A5F69F24084B13306A327 /* Pods-DentalWhale.debug.xcconfig */,
+				2C61B109CDBCB56268C0820B /* Pods-DentalWhale.release.xcconfig */,
+				43476DE43BA989F869CA6496 /* Pods-DentalWhale-BoaltAppTests.debug.xcconfig */,
+				C09DE654546BF612DC318A53 /* Pods-DentalWhale-BoaltAppTests.release.xcconfig */,
+				B1C86AC04EF3943C8397F494 /* Pods-DentalWhale-tvOS.debug.xcconfig */,
+				57C364A5CA123E7A68481EF7 /* Pods-DentalWhale-tvOS.release.xcconfig */,
+				7F9E91B0602E0A72AEF855CA /* Pods-DentalWhale-tvOSTests.debug.xcconfig */,
+				95EEA1F54F7C00564651E856 /* Pods-DentalWhale-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		2D3E4E8FA834479E9F3D4D9A /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				497C352BADC24A51919007EF /* AntDesign.ttf */,
+				6BA3D9C869AB49D296D8D561 /* Entypo.ttf */,
+				B24130A7A2604F458F3554D0 /* EvilIcons.ttf */,
+				73DE0ACB48874A33A5FB9A7C /* Feather.ttf */,
+				56562895918949529A78A926 /* FontAwesome.ttf */,
+				D71DAE71B36A43C4A24C3F6A /* FontAwesome5_Brands.ttf */,
+				62CD62F1DDCD4367B275074A /* FontAwesome5_Regular.ttf */,
+				E2FBB090279B42F08B499682 /* FontAwesome5_Solid.ttf */,
+				53D1EC6BA5F0473686B9DF76 /* Fontisto.ttf */,
+				6224EC71A41B4A2690F3C9CF /* Foundation.ttf */,
+				0527211E24FD491A94908BDA /* Ionicons.ttf */,
+				47A344AB47E841ABA5700F5E /* MaterialCommunityIcons.ttf */,
+				A974D1523E334EB3BBBAA022 /* MaterialIcons.ttf */,
+				F6ECC024632D445AA22201B8 /* Octicons.ttf */,
+				914F57B7522D49FDBD6BBC28 /* SimpleLineIcons.ttf */,
+				E06F7C183C834C7EBAC0C7B3 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -221,9 +278,9 @@
 			productReference = 00E356EE1AD99517003FC87E /* BoaltAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* BoaltApp */ = {
+		13B07F861A680F5B00A75B9A /* DentalWhale */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BoaltApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DentalWhale" */;
 			buildPhases = (
 				E6EEAEDCE13697F230B86C28 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +294,14 @@
 			);
 			dependencies = (
 			);
-			name = BoaltApp;
-			productName = BoaltApp;
-			productReference = 13B07F961A680F5B00A75B9A /* BoaltApp.app */;
+			name = DentalWhale;
+			productName = DentalWhale;
+			productReference = 13B07F961A680F5B00A75B9A /* DentalWhale.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* BoaltApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* DentalWhale-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BoaltApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DentalWhale-tvOS" */;
 			buildPhases = (
 				24C604DA779A573391F13C7A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +314,14 @@
 			);
 			dependencies = (
 			);
-			name = "BoaltApp-tvOS";
-			productName = "BoaltApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* BoaltApp-tvOS.app */;
+			name = "DentalWhale-tvOS";
+			productName = "DentalWhale-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* DentalWhale-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* BoaltApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* DentalWhale-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BoaltApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DentalWhale-tvOSTests" */;
 			buildPhases = (
 				957E146A48B9E4ED90AEE69D /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +333,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "BoaltApp-tvOSTests";
-			productName = "BoaltApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* BoaltApp-tvOSTests.xctest */;
+			name = "DentalWhale-tvOSTests";
+			productName = "DentalWhale-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* DentalWhale-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +364,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BoaltApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DentalWhale" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,10 +377,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* BoaltApp */,
+				13B07F861A680F5B00A75B9A /* DentalWhale */,
 				00E356ED1AD99517003FC87E /* BoaltAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* BoaltApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* BoaltApp-tvOSTests */,
+				2D02E47A1E0B4A5D006451C7 /* DentalWhale-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* DentalWhale-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +399,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				79498DC136894A6AA23676E3 /* AntDesign.ttf in Resources */,
+				05B7F7E7B168414DB1A3F5C5 /* Entypo.ttf in Resources */,
+				2F000BE6F9DC435988FB9AE9 /* EvilIcons.ttf in Resources */,
+				036CF66A3F3E449694DF9218 /* Feather.ttf in Resources */,
+				B557DBD6C5414D99BAEA1EA8 /* FontAwesome.ttf in Resources */,
+				0C2BAF03EAC946E3AC2C3946 /* FontAwesome5_Brands.ttf in Resources */,
+				7DFBA50D4A354EEE87F5F1F2 /* FontAwesome5_Regular.ttf in Resources */,
+				72136B631707440999D77E32 /* FontAwesome5_Solid.ttf in Resources */,
+				76AA35DEEF1945F89B07EC6F /* Fontisto.ttf in Resources */,
+				FB105732B87D4BF09991BCE6 /* Foundation.ttf in Resources */,
+				61C12B9FAB70481FB496BDE9 /* Ionicons.ttf in Resources */,
+				0F761AD5426043F1ADE327EC /* MaterialCommunityIcons.ttf in Resources */,
+				8A6DBF6B39214CE1B4362CE3 /* MaterialIcons.ttf in Resources */,
+				422FE1F4F4F14DF1BBCD99DC /* Octicons.ttf in Resources */,
+				29FC90D83EEC4AE4A8124C94 /* SimpleLineIcons.ttf in Resources */,
+				7852DD46AEDF4139BD2F67B9 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +465,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BoaltApp-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DentalWhale-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,7 +478,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BoaltApp-BoaltAppTests/Pods-BoaltApp-BoaltAppTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DentalWhale-BoaltAppTests/Pods-DentalWhale-BoaltAppTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -414,7 +487,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoaltApp-BoaltAppTests/Pods-BoaltApp-BoaltAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DentalWhale-BoaltAppTests/Pods-DentalWhale-BoaltAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -446,7 +519,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BoaltApp-BoaltAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DentalWhale-BoaltAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +541,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BoaltApp-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DentalWhale-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -490,7 +563,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BoaltApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DentalWhale-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,7 +576,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BoaltApp/Pods-BoaltApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DentalWhale/Pods-DentalWhale-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -512,7 +585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoaltApp/Pods-BoaltApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DentalWhale/Pods-DentalWhale-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -595,12 +668,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* BoaltApp */;
+			target = 13B07F861A680F5B00A75B9A /* DentalWhale */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* BoaltApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* DentalWhale-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -608,7 +681,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43476DE43BA989F869CA6496 /* Pods-BoaltApp-BoaltAppTests.debug.xcconfig */;
+			baseConfigurationReference = 43476DE43BA989F869CA6496 /* Pods-DentalWhale-BoaltAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -625,13 +698,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoaltApp.app/BoaltApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DentalWhale.app/DentalWhale";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09DE654546BF612DC318A53 /* Pods-BoaltApp-BoaltAppTests.release.xcconfig */;
+			baseConfigurationReference = C09DE654546BF612DC318A53 /* Pods-DentalWhale-BoaltAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -645,19 +718,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoaltApp.app/BoaltApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DentalWhale.app/DentalWhale";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA2A5F69F24084B13306A327 /* Pods-BoaltApp.debug.xcconfig */;
+			baseConfigurationReference = AA2A5F69F24084B13306A327 /* Pods-DentalWhale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = BoaltApp/Info.plist;
+				INFOPLIST_FILE = DentalWhale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -665,7 +738,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BoaltApp;
+				PRODUCT_NAME = DentalWhale;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,12 +747,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C61B109CDBCB56268C0820B /* Pods-BoaltApp.release.xcconfig */;
+			baseConfigurationReference = 2C61B109CDBCB56268C0820B /* Pods-DentalWhale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = BoaltApp/Info.plist;
+				INFOPLIST_FILE = DentalWhale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -687,7 +760,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BoaltApp;
+				PRODUCT_NAME = DentalWhale;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,7 +768,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1C86AC04EF3943C8397F494 /* Pods-BoaltApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = B1C86AC04EF3943C8397F494 /* Pods-DentalWhale-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,14 +779,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "BoaltApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "DentalWhale-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BoaltApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DentalWhale-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -723,7 +796,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57C364A5CA123E7A68481EF7 /* Pods-BoaltApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 57C364A5CA123E7A68481EF7 /* Pods-DentalWhale-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -734,14 +807,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "BoaltApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "DentalWhale-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BoaltApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DentalWhale-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -751,7 +824,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F9E91B0602E0A72AEF855CA /* Pods-BoaltApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 7F9E91B0602E0A72AEF855CA /* Pods-DentalWhale-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,24 +834,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "BoaltApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "DentalWhale-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BoaltApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DentalWhale-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoaltApp-tvOS.app/BoaltApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DentalWhale-tvOS.app/DentalWhale-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95EEA1F54F7C00564651E856 /* Pods-BoaltApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 95EEA1F54F7C00564651E856 /* Pods-DentalWhale-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -788,17 +861,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "BoaltApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "DentalWhale-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.BoaltApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DentalWhale-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoaltApp-tvOS.app/BoaltApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DentalWhale-tvOS.app/DentalWhale-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -928,7 +1001,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BoaltApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DentalWhale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -937,7 +1010,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BoaltApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DentalWhale-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -946,7 +1019,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BoaltApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DentalWhale-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -955,7 +1028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BoaltApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DentalWhale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

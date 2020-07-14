@@ -1,6 +1,7 @@
 package com.boaltapp;
 
 import com.facebook.react.ReactActivity;
+import com.facebook.react.GoogleCastActivity;
 
 public class MainActivity extends ReactActivity {
 
@@ -10,6 +11,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "BoaltApp";
+    return "DentalWhale";
   }
 }
