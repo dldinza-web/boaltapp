@@ -36,6 +36,12 @@ export default class CommentService {
           time: '2020-02-02 14:16:00',
           subject: 'Successfully Presentation',
           comment: "That't great news Dr. Baker. Let's me know to start the Medical Subscription Plan this week to expand Meet Blue."
+        },
+        {
+          author: 'Sr. Smith',
+          time: '2020-02-03 10:04:00',
+          subject: 'Successfully Presentation',
+          comment: "Well done. Great team work!!"
         }
       ]
     }

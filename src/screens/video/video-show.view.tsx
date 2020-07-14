@@ -11,6 +11,7 @@ import { AirPlayButton } from 'react-native-airplay-btn';
 import GoogleCast, { CastButton } from 'react-native-google-cast';
 import CommentModel from "../../models/comment/comment.model";
 import moment from 'moment'
+import {Animated} from "react-native";
 
 export default class VideoShowView extends ViewBase implements ViewBaseInterface {
   render(component :Component) :Element {
@@ -40,7 +41,14 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
   private showVideo() {
     return (
       <>
-        <View style={[styles.videoWrapper]}>
+        <Animated.View
+          style={[
+            styles.videoWrapper,
+            {
+              opacity: this.component.state.animations.videoFadeValue
+            }
+          ]}
+        >
           <VideoPlayer
             source={
               !this.component.state.video.isLocal
@@ -57,15 +65,15 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
               <Button onPress={this.component.onStartAndroidCasting} title={"Casting Chromecast"}/>
             </View>
           }
-        </View>
+        </Animated.View>
 
         { this.showVideoInformation() }
 
         <View>
           <Text style={[styles.commentsTitle]}>Comments:</Text>
 
-          { this.component.state.comments.map((coment, index) =>
-            this.showCommentCard(coment)
+          { this.component.state.comments.map((comment, index) =>
+            this.showCommentCard(index, comment)
           ) }
         </View>
       </>
@@ -118,33 +126,49 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
     )
   }
 
-  showCommentCard(comment :CommentModel) {
+  showCommentCard(index: number, comment :CommentModel) {
     let authorParts = comment.author.split(' ')
     let time = moment(comment.time).format('MMMM Do YYYY, h:mm:ss a')
 
     return (
-      <View
+      <Animated.View
+        key={`commentIndex-${index}`}
         style={[
-          styles.cardInfo,
+          {
+            transform: [
+              {
+                translateY: this.component.state.animations.commentsInitValue.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [1000, 0]
+                })
+              }
+            ]
+          }
         ]}
       >
         <View
           style={[
-            commonStyles.horizontal,
+            styles.cardInfo,
           ]}
         >
-          <Text style={[styles.cardHeaderTitle, styles.cardContentTitleBg2]}>{authorParts[0]} <Text style={[commonStyles.strongText]}>{authorParts[1]}</Text></Text>
-          <Text style={[styles.cardHeaderDate]}>{time}</Text>
+          <View
+            style={[
+              commonStyles.horizontal,
+            ]}
+          >
+            <Text style={[styles.cardHeaderTitle, styles.cardContentTitleBg2]}>{authorParts[0]} <Text style={[commonStyles.strongText]}>{authorParts[1]}</Text></Text>
+            <Text style={[styles.cardHeaderDate]}>{time}</Text>
+          </View>
+          <View
+            style={[
+              styles.cardContent
+            ]}
+          >
+            <Text style={[commonStyles.fontSizeX]}>{comment.subject}</Text>
+          <Text>{comment.comment}</Text>
+          </View>
         </View>
-        <View
-          style={[
-            styles.cardContent
-          ]}
-        >
-          <Text style={[commonStyles.fontSizeX]}>{comment.subject}</Text>
-        <Text>{comment.comment}</Text>
-        </View>
-      </View>
+      </Animated.View>
     )
   }
 }
