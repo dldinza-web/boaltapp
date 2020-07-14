@@ -9,13 +9,15 @@ import VideoPlayer from 'react-native-video-controls';
 import styles from "./video-show.styles";
 import { AirPlayButton } from 'react-native-airplay-btn';
 import GoogleCast, { CastButton } from 'react-native-google-cast';
+import CommentModel from "../../models/comment/comment.model";
+import moment from 'moment'
 
 export default class VideoShowView extends ViewBase implements ViewBaseInterface {
   render(component :Component) :Element {
     this.component = component
 
     return (
-      <Layout title={"testing Pro"}>
+      <Layout>
         { this.component.state.isLoadingVideo
           ? this.showLoading()
           : this.showVideo()
@@ -62,9 +64,9 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
         <View>
           <Text style={[styles.commentsTitle]}>Comments:</Text>
 
-          { this.showCommentCard() }
-          { this.showCommentCard() }
-          { this.showCommentCard() }
+          { this.component.state.comments.map((coment, index) =>
+            this.showCommentCard(coment)
+          ) }
         </View>
       </>
     )
@@ -116,7 +118,10 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
     )
   }
 
-  showCommentCard() {
+  showCommentCard(comment :CommentModel) {
+    let authorParts = comment.author.split(' ')
+    let time = moment(comment.time).format('MMMM Do YYYY, h:mm:ss a')
+
     return (
       <View
         style={[
@@ -128,16 +133,16 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
             commonStyles.horizontal,
           ]}
         >
-          <Text style={[styles.cardHeaderTitle, styles.cardContentTitleBg2]}>Dr. <Text style={[commonStyles.strongText]}>Baker</Text></Text>
-          <Text style={[styles.cardHeaderDate]}>March 2, 2020 at 8:00 am</Text>
+          <Text style={[styles.cardHeaderTitle, styles.cardContentTitleBg2]}>{authorParts[0]} <Text style={[commonStyles.strongText]}>{authorParts[1]}</Text></Text>
+          <Text style={[styles.cardHeaderDate]}>{time}</Text>
         </View>
         <View
           style={[
             styles.cardContent
           ]}
         >
-          <Text style={[commonStyles.fontSizeX]}>Successfully Presentation</Text>
-          <Text>Many hospitals and clinics accepted to use Meet Blue.</Text>
+          <Text style={[commonStyles.fontSizeX]}>{comment.subject}</Text>
+        <Text>{comment.comment}</Text>
         </View>
       </View>
     )

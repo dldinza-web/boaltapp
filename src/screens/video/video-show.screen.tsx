@@ -4,9 +4,12 @@ import GoogleCast from 'react-native-google-cast';
 
 import VimeoService from "../../services/vimeo.service";
 import ComponentBase from "../../core/component.base";
+import CommentService from "../../services/comments.service";
+import CommentModel from "src/models/comment/comment.model";
 
 export default class VideoShowScreen extends ComponentBase {
   private view :VideoShowView
+  private commentSrv :CommentService
   private player :any
   private vimeoSrv :VimeoService
 
@@ -16,7 +19,8 @@ export default class VideoShowScreen extends ComponentBase {
       source: '',
       thumbnail: '',
       isLocal: false
-    }
+    },
+    comments: []
   }
 
   constructor(props :Object) {
@@ -24,17 +28,28 @@ export default class VideoShowScreen extends ComponentBase {
     this.view = new VideoShowView()
 
     this.vimeoSrv = new VimeoService()
+    this.commentSrv = new CommentService()
   }
 
   componentDidMount() {
-    this.loadingVideo('392590844')
+    let videoId = '392590844'
+    this.loadingVideo(videoId)
+      .then(() => this.loadComments(videoId))
   }
 
-  loadingVideo(videoId :string) {
-    this.setStateValue({ isLoadingVideo: true })
+  private loadComments(videoId :string) {
+    this.commentSrv.retrieveComments(videoId)
+      .then((comments :CommentModel[]) => this.setStateValues({ comments: comments }))
+      .catch(error => {
+        console.log('error loading comments', error)
+      })
+  }
+
+  private loadingVideo(videoId :string) {
+    return this.setStateValues({ isLoadingVideo: true })
       .then(() => this.vimeoSrv.loadVideo('392590844'))
       .then((video :any) =>
-        this.setStateValue({
+        this.setStateValues({
             video: {
               source: video.videoUrl,
               thumbnailUrl: video.thumbnailUrl,
@@ -42,9 +57,10 @@ export default class VideoShowScreen extends ComponentBase {
             }
           })
       )
-      .then(() => this.setStateValue({ isLoadingVideo: false }))
+      .then(() => this.setStateValues({ isLoadingVideo: false }))
       .catch(error => {
-        console.log('!!!error loading video')
+        console.log('!!!error loading video', error)
+        Promise.reject(false)
       })
   }
 
