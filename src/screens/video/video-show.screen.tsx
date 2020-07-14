@@ -82,7 +82,7 @@ export default class VideoShowScreen extends ComponentBase {
           })
       )
       .then(() => this.setStateValues({ isLoadingVideo: false }))
-      .then(async() => { this.startVideoFadeAnimation(); return Promise.resolve(true) })
+      .then(async() => this.startVideoFadeAnimation())
       .catch(error => {
         console.log('!!!error loading video', error)
         Promise.reject(false)

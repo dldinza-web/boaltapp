@@ -13,6 +13,33 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: 'rgba(255, 255, 255, 0.3)'
   },
+  broadcastingBar: {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    paddingHorizontal: 5,
+    marginBottom: 5,
+    alignItems: 'center',
+    paddingVertical: 5
+  },
+  broadcastingBtn: {
+    backgroundColor: colors.cardInfoBg,
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: 32
+  },
+  broadcastingBtnLeft: {
+    marginLeft: 5,
+    borderTopLeftRadius: 5,
+    borderBottomLeftRadius: 5,
+    paddingHorizontal: 2,
+    borderRightWidth: 1,
+    borderRightColor: 'rgba(255, 255, 255, 0.2)'
+  },
+  broadcastingBtnRight: {
+    marginRight: 5,
+    borderTopRightRadius: 5,
+    borderBottomRightRadius: 5,
+    paddingHorizontal: 5
+  },
   cardInfo: {
     backgroundColor: colors.cardInfoBg,
     marginVertical: 2.5

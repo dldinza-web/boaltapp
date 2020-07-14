@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import ViewBase from "../../core/view.base";
 import { ViewBaseInterface } from "src/core/view.base.interface";
-import { View, Text, Button, Platform, ActivityIndicator } from "react-native";
+import { View, Text, Button, Platform, ActivityIndicator, TouchableOpacity, TouchableNativeFeedback, TouchableHighlight } from "react-native";
 import Layout from "../../layout/layout.container";
 import commonStyles from "../../../assets/styles/global.styles"
 import VideoPlayer from 'react-native-video-controls';
@@ -58,13 +58,16 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
             disableBack={true}
             paused={true}
           />
-          { Platform.OS === 'ios' && <AirPlayButton style={{ height: 30, width: 30 }} />}
-          { Platform.OS === 'android' &&
-            <View>
-              <CastButton style={[{ width: 30, height: 30, borderColor: 'green' }]} />
-              <Button onPress={this.component.onStartAndroidCasting} title={"Casting Chromecast"}/>
+            <View style={[
+              styles.broadcastingBar,
+              commonStyles.horizontal
+            ]}>
+              <Text style={[ commonStyles.textWhite ]}>Broadcasting:</Text>
+
+              { this.showGoogleChromecastBroadcastBtns() }
+              { this.showAppleTVBroadcastBtns() }
             </View>
-          }
+
         </Animated.View>
 
         { this.showVideoInformation() }
@@ -78,6 +81,63 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
         </View>
       </>
     )
+  }
+
+  private showAppleTVBroadcastBtns() {
+    return Platform.OS !== 'ios'
+      ? null
+      : (
+          <View style={[
+            commonStyles.horizontal
+          ]}>
+            <TouchableOpacity
+              style={[
+                styles.broadcastingBtn,
+                commonStyles.alignMiddle,
+                styles.broadcastingBtnLeft,
+              ]}
+            >
+              <AirPlayButton style={{ height: 30, width: 30 }} />
+            </TouchableOpacity>
+            <TouchableHighlight
+              style={[
+                styles.broadcastingBtn,
+                styles.broadcastingBtnRight,
+              ]}
+            >
+              <Text>AirPlay</Text>
+            </TouchableHighlight>
+          </View>
+        )
+  }
+
+  private showGoogleChromecastBroadcastBtns() {
+    return Platform.OS !== 'android'
+      ? null
+      : (
+          <View style={[
+            commonStyles.horizontal
+          ]}>
+            <TouchableOpacity
+              style={[
+                styles.broadcastingBtn,
+                commonStyles.alignMiddle,
+                styles.broadcastingBtnLeft,
+              ]}
+            >
+              <CastButton style={[{ width: 30, height: 30, borderColor: 'green' }]} />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {}}
+              style={[
+                styles.broadcastingBtn,
+                styles.broadcastingBtnRight,
+              ]}
+            >
+              <Text>Chromecast</Text>
+            </TouchableOpacity>
+          </View>
+        )
   }
 
   private showVideoInformation() {

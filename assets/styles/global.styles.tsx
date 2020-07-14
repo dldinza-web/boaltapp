@@ -15,6 +15,10 @@ const commonStyles = StyleSheet.create({
     borderColor: 'blue',
     borderStyle: "solid"
   },
+  alignMiddle: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   appBg: {
     backgroundColor: colors.bgColor
   },
