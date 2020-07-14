@@ -6,6 +6,7 @@ import VimeoService from "../../services/vimeo.service";
 import ComponentBase from "../../core/component.base";
 import CommentService from "../../services/comments.service";
 import CommentModel from "src/models/comment/comment.model";
+import { Animated } from "react-native";
 
 export default class VideoShowScreen extends ComponentBase {
   private view :VideoShowView
@@ -20,7 +21,11 @@ export default class VideoShowScreen extends ComponentBase {
       thumbnail: '',
       isLocal: false
     },
-    comments: []
+    comments: [],
+    animations: {
+      videoFadeValue: new Animated.Value(0),
+      commentsInitValue: new Animated.Value(0)
+    }
   }
 
   constructor(props :Object) {
@@ -35,11 +40,30 @@ export default class VideoShowScreen extends ComponentBase {
     let videoId = '392590844'
     this.loadingVideo(videoId)
       .then(() => this.loadComments(videoId))
+
+    this.startVideoFadeAnimation()
+  }
+
+  private startCommentAnimation() {
+    Animated.timing(this.state.animations.commentsInitValue, {
+      toValue: 1,
+      duration: 2 * 1000,
+      useNativeDriver: true
+    }).start()
+  }
+
+  private startVideoFadeAnimation() {
+    Animated.timing(this.state.animations.videoFadeValue, {
+      toValue: 1,
+      duration: 2.5 * 1000,
+      useNativeDriver: true
+    }).start()
   }
 
   private loadComments(videoId :string) {
     this.commentSrv.retrieveComments(videoId)
       .then((comments :CommentModel[]) => this.setStateValues({ comments: comments }))
+      .then(() => this.startCommentAnimation())
       .catch(error => {
         console.log('error loading comments', error)
       })
@@ -58,6 +82,7 @@ export default class VideoShowScreen extends ComponentBase {
           })
       )
       .then(() => this.setStateValues({ isLoadingVideo: false }))
+      .then(async() => { this.startVideoFadeAnimation(); return Promise.resolve(true) })
       .catch(error => {
         console.log('!!!error loading video', error)
         Promise.reject(false)
