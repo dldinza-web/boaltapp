@@ -32,7 +32,7 @@ export default class CommentService {
           comment: 'Many hospitals and clinics accepted to use Meet Blue.'
         },
         {
-          author: 'Dr. Romina',
+          author: 'Dra. Romina',
           time: '2020-02-02 14:16:00',
           subject: 'Successfully Presentation',
           comment: "That't great news Dr. Baker. Let's me know to start the Medical Subscription Plan this week to expand Meet Blue."
@@ -41,7 +41,7 @@ export default class CommentService {
           author: 'Sr. Smith',
           time: '2020-02-03 10:04:00',
           subject: 'Successfully Presentation',
-          comment: "Well done. Great team work!!"
+          comment: "Well done. Great work, Team!!"
         }
       ]
     }

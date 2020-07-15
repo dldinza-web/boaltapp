@@ -19,6 +19,10 @@ const commonStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  sizeCoverAll: {
+    flex: 1,
+    height: '100%'
+  },
   appBg: {
     backgroundColor: colors.bgColor
   },
