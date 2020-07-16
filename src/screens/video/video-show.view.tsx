@@ -4,6 +4,7 @@ import ViewBase from "../../core/view.base";
 import { ViewBaseInterface } from "src/core/view.base.interface";
 import { View, Text, Button, Platform, ActivityIndicator, TouchableOpacity, TouchableNativeFeedback, TouchableHighlight } from "react-native";
 import Layout from "../../layout/layout.container";
+import VideoFullScreenLayout from "../../layout/video-full-screen-layout/video-full-screen-layout.container";
 import commonStyles from "../../../assets/styles/global.styles"
 import VideoPlayer from 'react-native-video-controls';
 import styles from "./video-show.styles";
@@ -17,14 +18,27 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
   render(component :Component) :Element {
     this.component = component
 
-    return (
-      <Layout>
-        { this.component.state.isLoadingVideo
-          ? this.showLoading()
-          : this.showVideo()
-        }
-      </Layout>
-    )
+    return !this.component.state.isVideoFullScreen
+      ? (<Layout>
+          { this.component.state.isLoadingVideo
+            ? this.showLoading()
+            : this.showVideo()
+          }
+        </Layout>)
+
+      : (<VideoFullScreenLayout>
+          <VideoPlayer
+            source={
+              !this.component.state.video.isLocal
+                ? { uri: this.component.state.video.source }
+                : null
+            }
+            disableBack={true}
+            paused={true}
+
+            onExitFullscreen={() => this.component.onExitFullscreen()}
+          />
+        </VideoFullScreenLayout>)
   }
 
   private showLoading() {
@@ -57,6 +71,8 @@ export default class VideoShowView extends ViewBase implements ViewBaseInterface
             }
             disableBack={true}
             paused={true}
+
+            onEnterFullscreen={() => this.component.onEnterFullscreen()}
           />
             <View style={[
               styles.broadcastingBar,

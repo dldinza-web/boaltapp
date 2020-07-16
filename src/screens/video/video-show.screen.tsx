@@ -16,10 +16,11 @@ export default class VideoShowScreen extends ComponentBase {
 
   state = {
     isLoadingVideo: false,
+    isVideoFullScreen: false,
     video: {
       source: '',
       thumbnail: '',
-      isLocal: false
+      isLocal: false,
     },
     comments: [],
     animations: {
@@ -37,11 +38,23 @@ export default class VideoShowScreen extends ComponentBase {
   }
 
   componentDidMount() {
+    this.loadingContent()
+  }
+
+  private loadingContent() {
     let videoId = '392590844'
+
     this.loadingVideo(videoId)
       .then(() => this.loadComments(videoId))
+  }
 
-    this.startVideoFadeAnimation()
+  onEnterFullscreen() {
+    this.setStateValues({ isVideoFullScreen: true })
+  }
+
+  onExitFullscreen() {
+    this.setStateValues({ isVideoFullScreen: false })
+      .then(() => this.loadingContent())
   }
 
   private startCommentAnimation() {
